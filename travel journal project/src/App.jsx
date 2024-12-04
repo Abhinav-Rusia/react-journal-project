@@ -1,13 +1,16 @@
 import "./App.css";
 import Header from "./header";
 import Entry from "./Entry";
+import Rajasthan from "./assets/rajasthan.jpg";
+import Auli from "./assets/auli.jpg";
+import Rohtang from "./assets/rohtang.jpg";
 
 function App() {
   return (
     <>
       <Header />
       <Entry
-        img="src/assets/rajasthan.jpg"
+        img={{ src: Rajasthan, alt: "Lake-Pichola" }}
         place="UDAIPUR"
         map="https://maps.app.goo.gl/SorjKh9XxfgF3wTU6"
         location="Lake Pichola"
@@ -19,7 +22,7 @@ function App() {
       />
 
       <Entry
-        img="src/assets/auli.jpg"
+        img={{ src: Auli, alt: "Auli,Uttrakahnd" }}
         place="UTTRAKHAND"
         map="https://maps.app.goo.gl/snbZ2kCQfF8HFDf9A"
         location="Auli"
@@ -27,7 +30,7 @@ function App() {
         details="Auli is in the Chamoli district of Uttarakhand, at an elevation of 2,800 meters (9,200 ft) above sea level.It is known for its ski resorts and natural beauty. The ski season runs from late November to March.Auli is connected to Joshimath by Asia's second highest and longest cable car, which spans 4 km and takes about 24 minutes."
       />
       <Entry
-        img="src/assets/rohtang.jpg"
+        img={{ src: Rohtang, alt: "Rohtang-pass" }}
         place="HIMANCHAL PRADESH"
         map="https://maps.app.goo.gl/xbhBwnrLvTopA6d46"
         location="Rohtang Pass"
