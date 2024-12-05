@@ -7,12 +7,8 @@ function App() {
   const entryElement = data.map((entry) => {
     return (
       <Entry
-        img={entry.img}
-        place={entry.title}
-        location={entry.location}
-        map={entry.map}
-        dates={entry.dates}
-        details={entry.details}
+        key={entry.id}
+        entry = {entry}
       />
     );
   });
